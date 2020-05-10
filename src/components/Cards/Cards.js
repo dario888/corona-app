@@ -16,7 +16,7 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Infected</Typography>
                         <Typography variant="h5">
-                            <CountUp start={0} end={confirmed.value} duration={2.5} separator="," />
+                            <CountUp start={0} end={confirmed.value} duration={2} separator="," />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Number of active cases of COVID-19</Typography>
@@ -25,7 +25,7 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recoverd)}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Recovered</Typography>
-                        <Typography variant="h5"><CountUp start={0} end={recovered.value} duration={2.5} separator="," /></Typography>
+                        <Typography variant="h5"><CountUp start={0} end={recovered.value} duration={2} separator="," /></Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Number of recoveris cases of COVID-19</Typography>
                     </CardContent>
@@ -33,7 +33,7 @@ const Cards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Deaths</Typography>
-                        <Typography variant="h5"><CountUp start={0} end={deaths.value} duration={2.5} separator="," /></Typography>
+                        <Typography variant="h5"><CountUp start={0} end={deaths.value} duration={2} separator="," /></Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant="body2">Number of death caused of COVID-19</Typography>
                     </CardContent>

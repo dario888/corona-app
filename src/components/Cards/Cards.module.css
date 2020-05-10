@@ -7,14 +7,19 @@
 }
 
 .infected {
-    border-bottom: 10px solid blue;
+    border-bottom: 10px solid rgb(110, 168, 226);
 }
 
 .recoverd {
-    border-bottom: 10px solid green;
+    border-bottom: 10px solid rgb(113, 212, 113);
 }
 
 .deaths {
-    border-bottom: 10px solid red;
+    border-bottom: 10px solid rgb(223, 105, 105);
 }
 
+@media(max-width: 770px) {
+    .card {
+      margin: 2% 0 !important;
+    }
+  }
